@@ -2,7 +2,7 @@
 
 AI-powered marketing campaign brief generator for small businesses.
 
-**Live prototype: https://claude.ai/public/artifacts/5712383a-0273-4a53-aa08-bca9d9ed69a9**
+**Live prototype: [https://claude.ai/public/artifacts/5712383a-0273-4a53-aa08-bca9d9ed69a9](https://claude.ai/public/artifacts/5712383a-0273-4a53-aa08-bca9d9ed69a9)**
 
 ---
 
@@ -15,14 +15,18 @@ Small business owners know their product but struggle to structure a marketing c
 ## How to use it
 
 **Easiest — open the live prototype:**
-Visit the URL above. Works in any browser, no setup, no account required.
+[https://claude.ai/public/artifacts/5712383a-0273-4a53-aa08-bca9d9ed69a9](https://claude.ai/public/artifacts/5712383a-0273-4a53-aa08-bca9d9ed69a9)
+Works in any browser, no setup, no account required.
 
-**Locally from this repo:**
+**From this repo (GitHub Pages):**
+[https://mashotti.github.io/briefbuilder/](https://mashotti.github.io/briefbuilder/)
+
+**Locally:**
 1. Clone the repo and open `campaign-brief-builder.html` directly in a browser (no server needed).
 2. Fill in the form and click Generate.
 3. The app calls the Anthropic API. If no API key is configured, it falls back to a template-based brief generated entirely in the browser — no network required, fully functional output.
 
-**To enable AI generation locally:**
+**To enable AI generation locally or on GitHub Pages:**
 Expand the "Running locally or on GitHub Pages?" section below the Generate button. Paste your Anthropic API key (starts with `sk-ant-`). The key is stored in your browser's `localStorage` only — it is never sent anywhere except directly to the Anthropic API, and it is not stored in this repo.
 
 ---
@@ -32,6 +36,8 @@ Expand the "Running locally or on GitHub Pages?" section below the Generate butt
 ```
 campaign-brief-builder.html   The entire application — one self-contained HTML file.
                                No build step, no dependencies, no framework.
+
+index.html                     Redirect to campaign-brief-builder.html (for GitHub Pages).
 
 README.md                      This file.
 
