@@ -22,7 +22,7 @@ Works in any browser, no setup, no account required.
 [https://mashotti.github.io/briefbuilder/](https://mashotti.github.io/briefbuilder/)
 
 **Locally:**
-1. Clone the repo and open `campaign-brief-builder.html` directly in a browser (no server needed).
+1. Clone the repo and open `index.html` directly in a browser (no server needed).
 2. Fill in the form and click Generate.
 3. The app calls the Anthropic API. If no API key is configured, it falls back to a template-based brief generated entirely in the browser — no network required, fully functional output.
 
@@ -34,10 +34,8 @@ Expand the "Running locally or on GitHub Pages?" section below the Generate butt
 ## File structure
 
 ```
-campaign-brief-builder.html   The entire application — one self-contained HTML file.
+index.html                     The entire application — one self-contained HTML file.
                                No build step, no dependencies, no framework.
-
-index.html                     Redirect to campaign-brief-builder.html (for GitHub Pages).
 
 README.md                      This file.
 

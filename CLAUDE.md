@@ -8,7 +8,7 @@ A single-page web app that helps small business owners create structured marketi
 
 ## Tech stack
 
-- Single HTML file (`campaign-brief-builder.html`). No build step, no dependencies, no framework.
+- Single HTML file (`index.html`). No build step, no dependencies, no framework.
 - Google Fonts: DM Serif Display (headings) + DM Sans (body), loaded via CDN.
 - Anthropic API (`/v1/messages`, model `claude-sonnet-4-20250514`) called client-side.
 - Browser localStorage for API key persistence.
@@ -31,8 +31,8 @@ This means **the app never lands in a broken or error-only state** in any enviro
 ## How to run / test
 
 - **Claude.ai artifact runtime**: open the file as an artifact. API calls work automatically.
-- **Local (file://)**: double-click the HTML file to open in browser. On first use, expand "Running locally or on GitHub Pages?" to save an Anthropic API key. Without a key, template mode activates automatically.
-- **GitHub Pages**: commit the file to a `gh-pages` branch or `docs/` folder and enable Pages in repo settings. Same behaviour as file://.
+- **Local (file://)**: double-click `index.html` to open in browser. On first use, expand "Running locally or on GitHub Pages?" to save an Anthropic API key. Without a key, template mode activates automatically.
+- **GitHub Pages**: served directly from `index.html` at repo root. Enable Pages in repo settings (Source: main, / root).
 
 No server needed. No `npm install`.
 
